@@ -4,13 +4,13 @@ import { HttpService } from "../http/http.service";
 @Component({
   selector: "app-result-comp",
   templateUrl: "./result-comp.component.html",
-  providers: [HttpService],
+  // providers: [HttpService],
   styleUrls: ["./result-comp.component.css"]
 })
 export class ResultCompComponent implements OnInit {
   @Input() repos: Repository;
   // newRepo: Repository;
-  constructor(private httpService: HttpService) {
+  constructor() {
     // this.newRepo = this.httpService.repos;
   }
 
