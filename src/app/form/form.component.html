@@ -1,0 +1,21 @@
+<div class="container" style="padding-top: 5%">
+  <div class="jumbotron">
+    <form #form="ngForm" (ngSubmit)="Check()">
+      <div class="form-group">
+        <label for="username">Github Username</label>
+        <input
+          type="text"
+          class="form-control"
+          id="username"
+          aria-describedby="userHelp"
+          placeholder="Enter a github username"
+          style="width: 50%"
+          [(ngModel)]="user.user"
+          name="user"
+        />
+      </div>
+      <button type="submit" class="btn btn-outline-secondary">Check</button>
+    </form>
+  </div>
+  <app-result-comp [repos]="repos"></app-result-comp>
+</div>

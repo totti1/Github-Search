@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body mx-auto">
+      <div class="avatar">
+        <!-- <h6>avatar</h6> -->
+        <img src="{{ repos.avatar_url }}" class="img" />
+      </div>
+      <h6 class="display-4">Welcome {{ repos.name }}</h6>
+      <p>Repositories: {{ repos.public_repos }}</p>
+      <p>Account created at: {{ repos.created_at | date }}</p>
+      <p>Following: {{ repos.following }}</p>
+      <p>Followers: {{ repos.followers }}</p>
+      <button type="button" class="btn btn-outline-dark">
+        <a href="{{ repos.html_url }}" target="_blank" class="link"
+          >Check the user Github profile</a
+        >
+      </button>
+    </div>
+  </div>
+</div>
