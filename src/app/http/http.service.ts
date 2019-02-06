@@ -30,7 +30,7 @@ export class HttpService {
         .get<ApiResponse>(
           "https://api.github.com/users/" +
             user +
-            "?access_token=57288a5e4c40edfd2df4738351ab5e52106d9ce5"
+            "?access_token=99c9ea26cab2f2b50973107b3016c8059b3ce0bc"
         )
         .toPromise()
         .then(
